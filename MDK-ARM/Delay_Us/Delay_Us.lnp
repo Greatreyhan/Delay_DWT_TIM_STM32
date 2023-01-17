@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"delay_us\startup_stm32f103xb.o"
+"delay_us\main.o"
+"delay_us\stm32f1xx_it.o"
+"delay_us\stm32f1xx_hal_msp.o"
+"delay_us\dwt_delay.o"
+"delay_us\timer_delay.o"
+"delay_us\stm32f1xx_hal_gpio_ex.o"
+"delay_us\stm32f1xx_hal_tim.o"
+"delay_us\stm32f1xx_hal_tim_ex.o"
+"delay_us\stm32f1xx_hal.o"
+"delay_us\stm32f1xx_hal_rcc.o"
+"delay_us\stm32f1xx_hal_rcc_ex.o"
+"delay_us\stm32f1xx_hal_gpio.o"
+"delay_us\stm32f1xx_hal_dma.o"
+"delay_us\stm32f1xx_hal_cortex.o"
+"delay_us\stm32f1xx_hal_pwr.o"
+"delay_us\stm32f1xx_hal_flash.o"
+"delay_us\stm32f1xx_hal_flash_ex.o"
+"delay_us\stm32f1xx_hal_exti.o"
+"delay_us\system_stm32f1xx.o"
+--strict --scatter "Delay_Us\Delay_Us.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Delay_Us.map" -o Delay_Us\Delay_Us.axf
